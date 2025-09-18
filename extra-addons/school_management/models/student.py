@@ -9,3 +9,4 @@ class Student(models.Model):
     roll_number = fields.Char(string="Roll Number")
     student_class = fields.Char(string="Class")
     email = fields.Char(string="Email")
+    mobail_no = fields.Integer(string="Mobaile No")

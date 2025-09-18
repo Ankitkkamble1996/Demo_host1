@@ -27,7 +27,10 @@
                         <field name="roll_number"/>
                         <field name="student_class"/>
                     </group>
+                    <group>
                         <field name="email"/>
+                         <field name="mobail_no" string="Mobile No"/>
+                    </group>
                     </group>
                 </sheet>
             </form>
