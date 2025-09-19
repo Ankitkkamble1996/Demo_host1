@@ -1,6 +1,6 @@
 <odoo>
-    <menuitem id="mix_desine_root_menu" name="Concrete Mix designe"/>
-    <menuitem id="mix_disigne_menu" name="Mix Designe" parent="mix_desine_root_menu"/>
+    <menuitem id="mix_desine_root_menu" name="Concrete Mix design"/>
+    <menuitem id="mix_disigne_menu" name="Mix Design" parent="mix_desine_root_menu"/>
 
      <record id="action_mix_design" model="ir.actions.act_window">
         <field name="name">Mix Design</field>
