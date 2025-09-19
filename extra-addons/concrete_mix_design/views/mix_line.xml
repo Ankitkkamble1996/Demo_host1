@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+    <record id="mix_parent_view" model="ir.ui.view">
+            <field name="name">lerm.mix.design.parent.form</field>
+            <field name="model">lerm.mix.design.parent</field>
+            <field name="arch" type="xml">
+                <form>
+                   
+                    <sheet>
+                        <group>
+                            <field name="name" />
+                            <field name="rec_date"/>
+                        </group>
+
+                        
+                        <button
+                            type="object"
+                            class="oe_highlight" 
+                            name="create_mix_design"
+                            string="Create Mix Design"
+                            />
+
+                        <field name="mix_lines" readonly="1">
+                            <tree editable="bottom">
+                                <field name="concrete_mix_id" widget="many2one" options="{'no_open': False}"/>
+                                <field name="create_date" readonly="1"/>
+                            </tree>
+                        </field>
+                    
+                    
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="mix_parent_tree_view" model="ir.ui.view">
+            <field name="name">lerm.mix.design.parent.tree</field>
+            <field name="model">lerm.mix.design.parent</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <!-- <header>
+                        <button name="print_report" string="Print Report" type="object" class="btn-primary"/>
+                    </header> -->
+                    <field name='name'/>
+                    <field name="rec_date" optional="show" />
+                </tree>
+            </field>
+        </record>
+
+  </data>
+</odoo>
