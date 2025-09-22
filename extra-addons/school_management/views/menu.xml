@@ -1,4 +1,0 @@
-<odoo>
-    <menuitem id="school_root_menu" name="School Management"/>
-    <menuitem id="student_menu" name="Students" parent="school_root_menu"/>
-</odoo>
